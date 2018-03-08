@@ -134,8 +134,8 @@ if answer == "9":
     mail = smtplib.SMTP("smtp.gmail.com", 587)
     mail.ehlo()
     mail.starttls()
-    mail.login("africanbitcoins@gmail.com", "africanbitcoins2018")
-    mail.sendmail("africanbitcoins@gmail.com", EmailAddres, content)
+    mail.login("Enter Your Email", "Enter Your Password")
+    mail.sendmail("Enter Email", EmailAddres, content)
     print("Email send Succesfully ")
     mail.close()
 
@@ -198,7 +198,7 @@ if answer == "10":
 if answer == "11":
     print("Please enter phone number e.g +2547XXXXXXXXX: ")
     PhoneNumber = input()
-    client = nexmo.Client(key="416abae4",secret="a889301e47be6540")
+    client = nexmo.Client(key="Enter Key",secret="Enter Secret Key")
     client.send_message ({
         'from': 'BitHub Africa',
         'to': PhoneNumber,
